@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Institucional</title>
+
+    <!--===============IconScout--============================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/teste.css">
+
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!--===============Google Fonts--============================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" 
+rel="stylesheet">
+
+
+<!--==============Swiper Js=============-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+   <nav>
+       <div class="container nav__container">
+           <img src="img/Logo_antonelli-removebg-preview.png" class="logo__image">
+           <ul class="nav__menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">Sobre</a></li>
+               <li><a href="services.html">Serviços</a></li>
+               <li><a href="contact.html" class="contact__button">Contato</a></li>
+               <li><a href="contact.html" class="resultados__button">Resultados</a></li>
+           </ul>
+           <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+           <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+       </div>
+   </nav> 
+   <!--====================Final da NavBar==================-->
+<div class="carousel__tp">
+   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+    </ol>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="overlay-image" style="background-image: url('img/slider3.jpg');"></div>
+    <div class="container">
+        <h1>Exelência em Resultados</h1>
+        <p>Informações Precisas e detalhadas para um melhor diagnóstico</p>
+           <a href="#" class="btn btn-lg btn-primary">
+               Saiba Mais
+           </a>
+    </div>
+    </div>
+    <div class="carousel-item">
+     <div class="overlay-image" style="background-image: url('img/microbiologia-produtos.jpg');"></div>
+ <div class="container">
+     <h1>Exelência em Resultados</h1>
+     <p>Informações Precisas e detalhadas para um melhor diagnóstico</p>
+        <a href="#" class="btn btn-lg btn-primary">
+            Saiba Mais
+        </a>
+ </div>
+    </div>
+</div>
+<a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+    <span class="sr-only"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+
+<a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+ <span class="sr-only"></span>
+ <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+</div>
+</div>
+
+   <!--====================Final Header==================-->
+   <header>
+       <div class="container somos__container">
+       <div class="somos__left">
+           <h1>Quem Somos</h1>
+           <p>Realizamos exames laboratoriais, garantindo
+            resultados confiáveis com atendimento humanizado a população!
+            Nosso objetivo é ser reconhecido como melhor laboratório de
+            análises clinicas do extremo sul catarinense.</p>
+            <ul class="services__somos">
+                <li><i class="uil uil-stethoscope"></i>    Toxicológico</li>
+                <li><i class="uil uil-stethoscope"></i>    Pezinho</li>
+                <li><i class="uil uil-stethoscope"></i>    Preventivo</li>
+
+                <li><i class="uil uil-stethoscope"></i>    Hemograma</li>
+                <li><i class="uil uil-stethoscope"></i>    Sexagem Fetal</li>
+                <li><i class="uil uil-stethoscope"></i>    Tipo Sanguineo</li>
+            </ul>
+
+           <a href="#" class="btn">Saiba Mais</a>
+       </div>
+
+       <div class="somos__right">
+           <div class="somos__image">
+               <img src="img/pngwing.com.png" class="somos__image">
+           </div>
+       </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<div class="popup">
+    <div class="contentBox">
+        <div class="close"></div>
+        <div class="imgBx">
+            <img src="img/doctors.png">
+        </div>
+        <div class="content">
+           <div>
+            <h3>Seus Exames</h3>
+            <p>Saiba o resultados dos exames clicando agora mesmo
+                em ver resultados.
+            </p>
+            <a href="#" class="btn">Ver Resultados</a>
+           </div>
+        </div>
+    </div>
+</div>
+
+<!--Automatic Show-->
+
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block";
+
+            // time delay
+        }, 3000)
+    }
+
+    close.addEventListener('click', () => {
+        popup.style.display = "none";
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+   <section class="categories">
+       <div class="container categories__container">
+           <div class="categories__left">
+               <h1 class="category__title">Exames</h1>
+               <p class="exames__p">
+                Exame laboratorial é o conjunto de exames e testes realizados em laboratórios de análises clínicas 
+                visando um diagnóstico ou confirmação de uma patologia ou para um check-up (exame de rotina).
+               </p>
+               <a href="#" class="btn">Saiba Mais</a>
+           </div>
+
+           <div class="categories__right">
+               <article class="category">
+                   <span class="category__icon"><i class="uil uil-kid"></i></span>
+                   <h5>Pezinho</h5>
+                   <p>Teste do pezinho é um exame realizado entre o segundo e o quinto dia do nascimento do bebê</p>
+               </article>
+
+               <article class="category">
+                <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                <h5>Preventivo</h5>
+                <p>É um teste realizado para detectar alterações nas células do colo do útero.</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                <h5>Sexagem Fetal</h5>
+                <p>Exame para identificar o sexo do bebê.</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-cell"></i></span>
+                <h5>Biologia Molecular</h5>
+                <p>Fenômenos e eventos biológicos sob o ponto de vista molecular</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-ambulance"></i></span>
+                <h5>Coleta Domiciliar</h5>
+                <p>Assistência que permite que o paciente seja atendido no local de sua preferência</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                <h5>Teste de Paternidade</h5>
+                <p>Tem a finalidade de descobrir se há o vínculo genético entre duas pessoas.</p>
+            </article>
+           </div>
+       </div>
+   </section>
+   <!--=============Final das Categorias===================-->
+<section class="courses">
+    <h2>Notícias</h2>
+    <div class="container courses__container">
+        <article class="course">
+            <div class="course__image">
+                <img class="" src="img/belza__criança.jpg">
+            </div>
+            <div class="course__info">
+                <h4>A beleza da infância</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa odio qui itaque labore soluta perspiciatis doloremque.
+            </p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course__image">
+                <img src="img/photodune-7064563-stressed-woman-with-computer-and-documents-s-360x276@2x.jpg">
+            </div>
+            <div class="course__info">
+                <h4>Estresse no trabalho?</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa odio qui itaque labore soluta perspiciatis doloremque.
+            </p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course__image">
+                <img src="img/photodune-1163374-healthy-breakfast-m-480x369@2x.jpg">
+            </div>
+            <div class="course__info">
+                <h4>Alimentação Saudável</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Culpa odio qui itaque.
+            </p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </article>
+
+    
+    </div>
+</section>
+<!--====================Final Serviços==================-->
+<section class="faqs">
+    <h2>Perguntas Frequentes</h2>
+    <div class="container faqs__container">
+        <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+                <h4>Como faço para entrar em contato?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Numquam, quam blanditiis aliquid neque a, expedita quo unde officiis, 
+                    eum nisi cupiditate perspiciatis veniam error adipisci facere est voluptatum eius cum!
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+                <h4>Qual é o horário de funcionamento??</h4>
+                <p>
+                    Horário atendimento 6:45 as 11:45 13:00 as 17:30 De segunda á sexta-feira
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+                <h4>Como faço para entrar em contato?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Numquam, quam blanditiis aliquid neque a, expedita quo unde officiis, 
+                    eum nisi cupiditate perspiciatis veniam error adipisci facere est voluptatum eius cum!
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+                <h4>Como faço para entrar em contato?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Numquam, quam blanditiis aliquid neque a, expedita quo unde officiis, 
+                    eum nisi cupiditate perspiciatis veniam error adipisci facere est voluptatum eius cum!
+                </p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq__icon"><i class="uil uil-plus"></i></div>
+            <div class="question__answer">
+                <h4>Como faço para entrar em contato?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Numquam, quam blanditiis aliquid neque a, expedita quo unde officiis, 
+                    eum nisi cupiditate perspiciatis veniam error adipisci facere est voluptatum eius cum!
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+<!--====================Final de Faqs==================-->
+
+
+<section class="container testimonials__container mySwiper">
+    <h2>Avaliação dos Clientes</h2>
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="img/testimonial__1.jpg">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayu</h5>
+                <small>Estudante</small>
+            </div>
+            <div class="testimonial__body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam dolorem consequatur laboriosam ratione necessitatibus tempora saepe nesciunt. 
+                    Alias modi magni architecto ullam suscipit fugiat, deserunt accusamus quam dolores dolorum?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="img/testimonial__2.jpeg">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayu</h5>
+                <small>Estudante</small>
+            </div>
+            <div class="testimonial__body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam dolorem consequatur laboriosam ratione necessitatibus tempora saepe nesciunt. 
+                    Alias modi magni architecto ullam suscipit fugiat, deserunt accusamus quam dolores dolorum?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="img/testimonial__3.jpg">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayu</h5>
+                <small>Estudante</small>
+            </div>
+            <div class="testimonial__body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam dolorem consequatur laboriosam ratione necessitatibus tempora saepe nesciunt. 
+                    Alias modi magni architecto ullam suscipit fugiat, deserunt accusamus quam dolores dolorum?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="img/testimonial__4.jpg">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayu</h5>
+                <small>Estudante</small>
+            </div>
+            <div class="testimonial__body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam dolorem consequatur laboriosam ratione necessitatibus tempora saepe nesciunt. 
+                    Alias modi magni architecto ullam suscipit fugiat, deserunt accusamus quam dolores dolorum?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="img/testimonial__5.jpg">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayu</h5>
+                <small>Estudante</small>
+            </div>
+            <div class="testimonial__body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam dolorem consequatur laboriosam ratione necessitatibus tempora saepe nesciunt. 
+                    Alias modi magni architecto ullam suscipit fugiat, deserunt accusamus quam dolores dolorum?
+                </p>
+            </div>
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+<!--==============Fim Avaliação===============-->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Contato</span> </h1>
+
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13967.626488396561!2d-49.6823238!3d-28.9308223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf21d801e794782a0!2sLaborat%C3%B3rio%20Antonelli!5e0!3m2!1spt-BR!2sbr!4v1650399993013!5m2!1spt-BR!2sbr" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form action="">
+        <h3 class="form-title">Entre em contato</h3>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name">
+        </div>
+
+        <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="email">
+        </div>
+
+        <div class="inputBox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number">
+        </div>
+        <input type="submit" value="Entre em contato" class="map__button">
+    </form>
+    
+    </div>
+</section>
+
+
+
+<!--Fim Mapa-->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__1">
+            <a href="index.html" class="footer__logo"><h4>Logo</h4></a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt ab nemo magni odit dignissimos nostrum quo!
+            </p>
+        </div>
+
+        <div class="footer__2">
+            <h4>Permalinks</h4>
+            <ul class="Permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="index.html">Serviços</a></li>
+                <li><a href="index.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacidade Politica</a></li>
+                <li><a href="#">Termos e condições</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__4">
+            <h4>Entre em Contato</h4>
+            <div>
+                <p>+55 48 9683-9317</p>
+                <p>12345@gmail.xom</p>
+            </div>
+        </div>
+
+        <ul class="footer__socials">
+            <li>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; LG</small>
+    </div>
+</footer>
+
+<!--Final Footer-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
+
+   <script>
+       var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 2,
+           spaceBetween: 30,
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+       })
+
+   </script>
+</body>
+</html>
